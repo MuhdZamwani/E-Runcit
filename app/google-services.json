@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "445241409845",
+    "firebase_url": "https://e-belanja-firebase-default-rtdb.firebaseio.com",
+    "project_id": "e-belanja-firebase",
+    "storage_bucket": "e-belanja-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445241409845:android:f1330784c601ff3c094c7c",
+        "android_client_info": {
+          "package_name": "com.example.eproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445241409845-f83078i0fb7tons93582g4dabs539dmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyBEbIMMqDKCLmPTf-QweBZ5wGUo6ySyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445241409845-f83078i0fb7tons93582g4dabs539dmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445241409845:android:90c0369e27995ada094c7c",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445241409845-f83078i0fb7tons93582g4dabs539dmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyBEbIMMqDKCLmPTf-QweBZ5wGUo6ySyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445241409845-f83078i0fb7tons93582g4dabs539dmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

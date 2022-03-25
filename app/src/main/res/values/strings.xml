@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">E-Runcit Pro</string>
+    <string name="passwordnotmatch">Password doesn\'t match</string>
+
+    <string-array name="AddProductDD">
+        <item>Category</item>
+        <item>Stationary</item>
+        <item>Rice</item>
+        <item>Beverage</item>
+        <item>Snacks</item>
+        <item>Spices</item>
+        <item>Bread</item>
+        <item>Medicine</item>
+        <item>Laundry</item>
+        <item>Toiletries</item>
+        <item>Kitchenware</item>
+        <item>Animal Food</item>
+
+    </string-array>
+
+    <string-array name="array_defaults_product">
+        <item>Category</item>
+    </string-array>
+</resources>

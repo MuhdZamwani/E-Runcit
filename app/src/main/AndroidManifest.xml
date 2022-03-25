@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.eproject">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/eruncitpro"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/eruncitpro"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EProject" >
+        <activity android:name="com.example.eproject.project.ownerinterface.MainActivityOwner"/>
+        <activity android:name="com.example.eproject.project.ownerinterface.OwnerProfileInterface"/>
+        <activity android:name="com.example.eproject.project.ownerinterface.OwnerShopInterface"/>
+        <activity android:name="com.example.eproject.project.ownerinterface.OwnerOrderInterface"/>
+        <activity android:name="com.example.eproject.project.ownerinterface.OwnerManualInterface"/>
+        <activity android:name="com.example.eproject.project.ownerinterface.EditProduct"/>
+        <activity android:name="com.example.eproject.project.ownerinterface.AddNewProduct"/>
+        <activity android:name="com.example.eproject.project.OwnerSignUp" />
+        <activity android:name="com.example.eproject.project.OwnerLogin" />
+        <activity android:name="com.example.eproject.project.splashAct.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".project.ownerinterface.OwnerOrderInterface"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="90dp"
+        app:layout_constraintTop_toBottomOf="@+id/add_address_toolbar">
+
+        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="733dp">-->
+
+        <!--                <EditText-->
+        <!--                    android:id="@+id/ShopInterfaceSearchBar"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="50dp"-->
+        <!--                    android:layout_marginStart="32dp"-->
+        <!--                    android:layout_marginTop="16dp"-->
+        <!--                    android:layout_marginEnd="32dp"-->
+        <!--                    android:background="@drawable/shopproductbackground"-->
+        <!--                    android:elevation="5dp"-->
+        <!--                    android:drawableStart="@drawable/search"-->
+        <!--                    android:drawablePadding="10dp"-->
+        <!--                    android:ems="10"-->
+        <!--                    android:hint="Search"-->
+        <!--                    android:textColorHint="#808080"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:inputType="textPersonName"-->
+        <!--                    android:paddingStart="20dp"-->
+        <!--                    android:textSize="14sp"-->
+        <!--                    android:textStyle="normal"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintHorizontal_bias="1.0"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    tools:ignore="NotSibling" />-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/add_address_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3398CB"
+            app:title="Customer Order List"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:clipToPadding="false"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ShopProductText" />
+
+        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#f6f6f6"
+                android:id="@+id/app_bar"
+                app:fabCradleMargin="8dp"
+                app:fabCradleRoundedCornerRadius="50dp"
+                app:fabCradleVerticalOffset="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/homeBtn2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/home"
+                            app:srcCompat="@drawable/home" />
+
+                        <TextView
+                            android:id="@+id/HomeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Home"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_gravity="center"
+                            android:id="@+id/ProfileBtn2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/profile"
+                            android:layout_weight="1"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/profileText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Profile"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_gravity="center"
+                            android:id="@+id/OrderBtn2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/chatclicked"
+                            android:layout_weight="1"
+                            />
+
+                        <TextView
+                            android:id="@+id/OrderText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_gravity="center"
+                            android:id="@+id/ShopBtn2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/shopicon"
+                            android:layout_weight="1"
+                            />
+
+                        <TextView
+                            android:id="@+id/ShopText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shop"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:layout_marginRight="18dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/manualBtn2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/questionmark"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/manualText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="About Us"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

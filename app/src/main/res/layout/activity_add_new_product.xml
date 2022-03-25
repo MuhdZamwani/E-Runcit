@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundgradientreverse"
+    android:elevation="3dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/shopproductbackground"
+        android:elevation="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/addnewitemproduct"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/item"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="#fff"
+            android:elevation="5dp"
+            android:hint="Product Name"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#808080"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:hint="Product Price"
+            android:textColorHint="#808080"
+            android:elevation="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addDescProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:hint="Description"
+            android:textColorHint="#808080"
+            android:elevation="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your Category: "
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#000"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/AddCategoryDD"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:elevation="5dp"
+            >
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+        <Button
+            android:id="@+id/addnewproductbtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Add New Product"
+            android:textColor="#fff"
+            app:backgroundTint="#FFA500" />
+
+    </LinearLayout>
+
+</LinearLayout>
